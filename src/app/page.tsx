@@ -1,15 +1,16 @@
-import SelectableTable from '@/components/selectableTable';
-import { fetchItems } from './api/util';
-import { RetailItem } from './constants/types';
+import { fetchProducts } from "./lib/fetchItems";
+import { lusitana } from "./ui/fonts";
+import Table from "./ui/items/table";
 
 export default async function Home() {
-  const ITEMS = await fetchItems();
+  const products = await fetchProducts();
 
   return (
-    <main className='flex min-h-screen flex-col p-24'>
-      <div>
-      <SelectableTable items={ITEMS} />
+    <div className="w-full">
+      <div className="flex w-full items-center justify-between">
+        <h1 className={`${lusitana.className} text-2xl`}>Products</h1>
       </div>
-    </main>
+      <Table />
+    </div>
   );
 };

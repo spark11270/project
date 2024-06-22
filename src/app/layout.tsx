@@ -20,7 +20,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ key: 'css' }}>
-          {children}
+          <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+            <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
+              {children}
+            </div>
+          </div>
         </AppRouterCacheProvider>  
       </body>
     </html>

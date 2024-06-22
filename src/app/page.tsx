@@ -1,16 +1,17 @@
-import { fetchProducts } from "./lib/fetchItems";
 import { lusitana } from "./ui/fonts";
-import Table from "./ui/items/table";
+import ProductTable from "./ui/items/products/table";
+import PerishableTable from "./ui/items/perishable/table";
+import DairyTable from "./ui/items/dairy/table";
+import MeatTable from "./ui/items/meat/table";
 
 export default async function Home() {
-  const products = await fetchProducts();
 
   return (
     <div className="w-full">
-      <div className="flex w-full items-center justify-between">
-        <h1 className={`${lusitana.className} text-2xl`}>Products</h1>
-      </div>
-      <Table />
+      <ProductTable />
+      <PerishableTable />
+      <DairyTable />
+      <MeatTable />
     </div>
   );
 };

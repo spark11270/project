@@ -1,14 +1,9 @@
 # Getting Started
 
-## Starting Up the MySQL Database
+## Starting Up the PostgreSQL Database
+Hosted on the cloud, no steps required!
 
-To connect to the MySQL server, run:
-
-```bash
-mysql -u root
-```
-
-To create a sample grocery store database, run:
+## MySQL Commands for Creating / Mutating the Grocery Store
 
 ~~~~sql
 CREATE DATABASE GroceryStore;

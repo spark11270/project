@@ -71,36 +71,36 @@ This will seed your database with the data in the *GroceryDataset.csv* file.
 
 ## Trying Out Features
 **To view the number of products in each category:**
-1. Navigate to the dashboard by clicking the link provided above.
+-  Navigate to the dashboard by clicking the link provided above.
     You should see a number of cards displaying each category + the corresponding number of products
 
 **To view all products in inventory:**
-1. Select the "Products" tab in the Side Nav.
+- Select the "Products" tab in the Side Nav.
     You should be navigated to dashboard/products
-2. *extra: try out the pagination* Flip through each page using arrow keys/page numbers at bottom of table to view 6 products at a time
+    *extra: try out the pagination* Flip through each page using arrow keys/page numbers at bottom of table to view 6 products at a time
 
 **To search for a specific product:**
-1. Input the name / id value / price of the item you're searching for in the search bar
-    The query results should appear in the table
+- Input the name / id value / price of the item you're searching for in the search bar
+    - The query results should appear in the table
 
 **To create + add a new product:**
-1. Select the "Products" tab in the Side Nav.
-2. Click on "Create Product"
-3. Fill out the form with the product information
-4. Select "Create Product" (the button) once finished
-5. Search for your item using the search bar
-    You should see your new item in the table!
+- Select the "Products" tab in the Side Nav.
+- Click on "Create Product"
+- Fill out the form with the product information
+- Select "Create Product" (the button) once finished
+- Search for your item using the search bar
+    - You should see your new item in the table!
 
 
 ## Currently Supported Features
-- Viewing all products in inventory for each category (localhost:3000)
-- Viewing the number of products in each category (localhost:3000/dashboard)
-- Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards
+1. Viewing all products in inventory for each category (localhost:3000)
+2. Viewing the number of products in each category (localhost:3000/dashboard)
+3.  Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards
     *Users can just make a change to a subrelation and see all related relations changed*
-- Creating + adding new products to inventory
-- Deleting product from table
-- Product Search (filtering!)
-- Pagination
+4. Creating + adding new products to inventory
+5. Deleting product from table
+6. Product Search (filtering!)
+7. Pagination
 
 ## In-Progress Features
 - Updating a product

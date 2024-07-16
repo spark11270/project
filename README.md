@@ -67,23 +67,23 @@ To load the data into the database, use command:
 ```bash
 yarn seed
 ```  
-This will seed your database with the data in the **GroceryDataset.csv** file.
+This will seed your database with the data in the *GroceryDataset.csv* file.
 
 ## Trying Out Features
-To view the number of products in each category:
+**To view the number of products in each category:**
 1. Navigate to the dashboard by clicking the link provided above.
     You should see a number of cards displaying each category + the corresponding number of products
 
-To view all products in inventory:
+**To view all products in inventory:**
 1. Select the "Products" tab in the Side Nav.
     You should be navigated to dashboard/products
 2. *extra: try out the pagination* Flip through each page using arrow keys/page numbers at bottom of table to view 6 products at a time
 
-To search for a specific product:
+**To search for a specific product:**
 1. Input the name / id value / price of the item you're searching for in the search bar
     The query results should appear in the table
 
-To create + add a new product:
+**To create + add a new product:**
 1. Select the "Products" tab in the Side Nav.
 2. Click on "Create Product"
 3. Fill out the form with the product information
@@ -95,7 +95,8 @@ To create + add a new product:
 ## Currently Supported Features
 - Viewing all products in inventory for each category (localhost:3000)
 - Viewing the number of products in each category (localhost:3000/dashboard)
-- Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards (Users can just make a change to a subrelation and see all related relations changed).
+- Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards
+    *Users can just make a change to a subrelation and see all related relations changed*
 - Creating + adding new products to inventory
 - Deleting product from table
 - Product Search (filtering!)

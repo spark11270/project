@@ -67,7 +67,7 @@ export async function createProduct(prevState: State, formData: FormData): Promi
     INSERT INTO Product (PId, PName, PStock, PPrice)
     VALUES (${id}, ${name}, ${stock}, ${priceInCents})
     `;
-    
+
     switch (category) {
       case 'Snack':
         await sql`
@@ -288,7 +288,7 @@ export async function updateProduct(
 
 export async function deleteProduct(id: string) {
   try {
-    await sql`DELETE FROM Product WHERE id = ${id}`;
+    await sql`DELETE FROM Product WHERE Product.PId = ${id}`;
     revalidatePath('/dashboard/products');
     return { message: 'Deleted product.' };
   } catch (error) {

@@ -85,7 +85,7 @@ async function seedSnack(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Snack
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_snack_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -136,7 +136,7 @@ async function seedPantry(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Pantry
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_pantry_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -187,7 +187,7 @@ async function seedCandy(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Candy
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_candy_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -238,7 +238,7 @@ async function seedBeverage(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Beverage
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_beverage_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -289,7 +289,7 @@ async function seedMeatAndSeafood(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE MeatAndSeafood
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_meat_and_seafood_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -340,7 +340,7 @@ async function seedBakeryAndDessert(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE BakeryAndDessert
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_bakery_and_dessert_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -391,7 +391,7 @@ async function seedBreakfast(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Breakfast
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_breakfast_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -442,7 +442,7 @@ async function seedCoffee(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Coffee
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_coffee_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -493,7 +493,7 @@ async function seedDeli(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Deli
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_deli_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -544,7 +544,7 @@ async function seedOrganic(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Organic
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_organic_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -594,7 +594,7 @@ async function seedCleaning(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Cleaning
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_cleaning_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -644,7 +644,7 @@ async function seedFloral(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Floral
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_floral_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE
@@ -694,7 +694,7 @@ async function seedHousehold(client) {
 
     const addConstraints = await client.sql`
       ALTER TABLE Household
-      ADD CONSTRAINT fk_product
+      ADD CONSTRAINT fk_household_product
       FOREIGN KEY (PId)
       REFERENCES Product(PId)
       ON DELETE CASCADE

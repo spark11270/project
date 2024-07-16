@@ -97,6 +97,7 @@ To create + add a new product:
 - Viewing the number of products in each category (localhost:3000/dashboard)
 - Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards (Users can just make a change to a subrelation and see all related relations changed).
 - Creating + adding new products to inventory
+- Deleting product from table
 - Product Search (filtering!)
 - Pagination
 

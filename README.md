@@ -67,7 +67,7 @@ To load the data into the database, use command:
 ```bash
 yarn seed
 ```  
-This will seed your database with the data in the *GroceryDataset.csv* file.
+This will seed your database with the data in the [GroceryDataset.csv](GroceryDataset.csv)   file.
 
 ## Trying Out Features
 **To view the number of products in each category:**

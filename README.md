@@ -93,15 +93,30 @@ This will seed your database with the data in the *GroceryDataset.csv* file.
 
 
 ## Currently Supported Features
-1. Viewing all products in inventory for each category (localhost:3000)
-2. Viewing the number of products in each category (localhost:3000/dashboard)
-3.  Storage of all products are added to the "Product" class. The products are replicated and classified via category; changes to the subclass will cascade upwards
-    *Users can just make a change to a subrelation and see all related relations changed*
-4. Creating + adding new products to inventory
-5. Deleting product from table
-6. Product Search (filtering!)
-7. Pagination
+1. Viewing all products in inventory for each category (localhost:3000)  
+    Files:  
+    - [fetchProducts() in data.ts](src/app/lib/data.ts)  
+2. Viewing the number of products in each category (localhost:3000/dashboard)  
+    Files:  
+    - [getCardData() in data.ts](src/app/lib/data.ts)  
+3.  Storage of all products are added to the "Product" class. The products are replicated and classified via category; updates to the foreign key will cascade upwards   
+    Files:  
+    - [all seed functions in seed.js](scripts/seed.js)
+4. Creating + adding new products to inventory  
+    Files:  
+     - [createProduct() in actions.ts](src/app/lib/actions.ts)
+5. Deleting product from table  
+    Files:   
+    - [deleteProduct() in actions.ts](src/app/lib/actions.ts)
+6. Product Search (filtering!)  
+    Files:  
+    - [fetchFilteredProducts() in data.ts](src/app/lib/data.ts)
+7. Pagination  
+    Files:  
+    - [fetchProductPages() in data.ts](src/app/lib/data.ts)
 
 ## In-Progress Features
-- Updating a product
+8. Updating a product  
+    Files:   
+    - [updateProduct(), fetchProductById() in actions.ts](src/app/lib/actions.ts)
 
